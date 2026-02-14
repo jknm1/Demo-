@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo Exchange Dashboard</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#0b0f17;
+  color:#fff;
+}
+header{
+  background:#111827;
+  padding:15px;
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+}
+.container{
+  padding:20px;
+}
+.card{
+  background:#111827;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:15px;
+}
+.balance{
+  font-size:28px;
+  color:#22c55e;
+}
+.label{
+  color:#9ca3af;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+td,th{
+  padding:12px;
+  text-align:left;
+}
+th{
+  color:#9ca3af;
+}
+.green{color:#22c55e;}
+.red{color:#ef4444;}
+</style>
+</head>
+<body>
+
+<header>Real Trading Dashboard</header>
+
+<div class="container">
+
+<div class="card">
+<div class="label">real Balance</div>
+<div class="balance">$25,000,000 USDT</div>
+</div>
+
+<div class="card">
+<div class="label">Markets</div>
+<table>
+<tr><th>Pair</th><th>Price</th><th>Change</th></tr>
+<tr><td>BTC/USDT</td><td>$64,230</td><td class="green">+2.4%</td></tr>
+<tr><td>ETH/USDT</td><td>$3,120</td><td class="red">-1.2%</td></tr>
+<tr><td>XAU/USD</td><td>$2,040</td><td class="green">+0.6%</td></tr>
+</table>
+</div>
+
+<div class="card">
+<div class="label">Notice</div>
+This is a simulated interface for learning and design practice only.
+</div>
+
+</div>
+</body>
+</html>
