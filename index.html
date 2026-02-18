@@ -1,118 +1,121 @@
 ```html
-<div class="mini reveal"><h4>Support readiness</h4><p>AI-first help with human escalation path.</p></div>
-<div class="mini reveal"><h4>Compliance-ready</h4><p>Policy and risk pages linked clearly in footer.</p></div>
-</div>
-</div>
-</div>
-</section>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zynx Corporation — Privacy-First AI Platforms</title>
+<meta name="description" content="Zynx Corporation builds privacy-first AI platforms for practical real-world execution." />
+<meta name="theme-color" content="#0a1020" />
 
-<!-- TESTIMONIALS -->
-<section class="section">
-<div class="container">
-<h2 class="reveal">What early users say</h2>
-<p class="lead reveal">Real feedback from builders and early adopters.</p>
-<div class="quotes">
-<article class="card quote reveal">
-<p>“Useful, practical, and privacy-aware from day one.”</p>
-<small>— Early adopter, Nairobi</small>
-</article>
-<article class="card quote reveal">
-<p>“The direction is clear. This feels like an execution-focused ecosystem.”</p>
-<small>— Freelancer, Mombasa</small>
-</article>
-</div>
-</div>
-</section>
+<!-- Open Graph -->
+<meta property="og:title" content="Zynx Corporation — Privacy-First AI Platforms" />
+<meta property="og:description" content="Build smarter with practical AI platforms for builders and businesses." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.zynxcorp.com/" />
 
-<!-- ROADMAP -->
-<section class="section" id="roadmap">
-<div class="container">
-<h2 class="reveal">Roadmap</h2>
-<p class="lead reveal">Clear staged execution path.</p>
-<div class="roadmap">
-<article class="card step reveal"><b>Q1 2026</b><span>ErrandAI + AlphaTrade expansion</span></article>
-<article class="card step reveal"><b>Q2 2026</b><span>World Forge private beta</span></article>
-<article class="card step reveal"><b>Q3 2026</b><span>Nexara Forge early access</span></article>
-<article class="card step reveal"><b>2027</b><span>Unified ecosystem + open APIs</span></article>
-</div>
-</div>
-</section>
-
-<!-- FAQ -->
-<section class="section" id="faq">
-<div class="container">
-<h2 class="reveal">FAQ</h2>
-<p class="lead reveal">Quick answers for first-time visitors.</p>
-
-<div class="faq">
-<details class="reveal">
-<summary>What is Zynx Corporation?</summary>
-<p>Zynx is an AI infrastructure company building privacy-first platforms for practical use cases.</p>
-</details>
-<details class="reveal">
-<summary>Which products are live now?</summary>
-<p>ErrandAI, AlphaTrade Global, and Zynx Capital are active. World Forge and Nexara Forge are in development.</p>
-</details>
-<details class="reveal">
-<summary>How do I get support?</summary>
-<p>Support is available through official channels with AI-first triage and human escalation.</p>
-</details>
-<details class="reveal">
-<summary>How do I join early access?</summary>
-<p>Use the waitlist form to receive launch updates, private invites, and priority onboarding.</p>
-</details>
-</div>
-
-<div class="card final reveal">
-<div>
-<h3 style="margin:0 0 6px">Ready to build with Zynx?</h3>
-<p class="muted" style="margin:0">Join serious early adopters getting first access to upcoming launches.</p>
-</div>
-<a class="btn primary" href="YOUR_WAITLIST_LINK" target="_blank" rel="noopener">Join Waitlist</a>
-</div>
-</div>
-</section>
-
-</main>
-
-<footer>
-<div class="container foot">
-<div class="muted">©️ 2026 Zynx Corporation. All rights reserved.</div>
-<div class="links">
-<a href="#">Privacy Policy</a>
-<a href="#">Terms of Service</a>
-<a href="#">Risk Disclosure</a>
-<a href="mailto:hello@zynxcorp.com">hello@zynxcorp.com</a>
-</div>
-</div>
-</footer>
-
-<div class="sticky">
-<a class="btn primary" href="YOUR_WAITLIST_LINK" target="_blank" rel="noopener">Join Waitlist</a>
-</div>
-
-<script>
-// Smooth anchor scrolling
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-a.addEventListener('click',e=>{
-const id=a.getAttribute('href');
-if(id && id.length>1){
-const el=document.querySelector(id);
-if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}
+<style>
+:root{
+--bg:#070c18;
+--bg2:#0b1428;
+--card:#0f1a33;
+--card2:#111f3e;
+--text:#e9f0ff;
+--muted:#a8b8de;
+--primary:#4f8cff;
+--primary2:#7aa7ff;
+--accent:#2de2c4;
+--ok:#22c55e;
+--warn:#f59e0b;
+--line:#203257;
+--shadow:0 12px 36px rgba(0,0,0,.35);
+--radius:16px;
+--max:1150px;
 }
-});
-});
 
-// Reveal animation
-const io = new IntersectionObserver((entries)=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){ entry.target.classList.add('show'); io.unobserve(entry.target); }
-});
-}, {threshold:0.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-</script>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,sans-serif;
+background:radial-gradient(1200px 600px at 80% -10%, #173064 0%, transparent 45%),
+radial-gradient(1000px 600px at -10% 0%, #102245 0%, transparent 42%),
+linear-gradient(180deg,#060a14 0%,#081022 40%,#0b1428 100%);
+color:var(--text);
+line-height:1.55;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:var(--max);margin:auto;padding:0 20px}
+.section{padding:62px 0}
+.muted{color:var(--muted)}
+.small{font-size:.92rem}
+.sr-only{
+position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
 
-</body>
-</html>
+/* Buttons */
+.btn{
+border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+padding:12px 18px;border-radius:12px;font-weight:700;transition:.22s ease;line-height:1;
+}
+.btn.primary{
+background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;
+box-shadow:0 8px 26px rgba(79,140,255,.35);
+}
+.btn.primary:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(79,140,255,.42)}
+.btn.ghost{
+background:transparent;color:#dbe7ff;border:1px solid var(--line);
+}
+.btn.ghost:hover{background:#0d1934}
+
+.badge{
+display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
+border:1px solid var(--line);font-size:.82rem;font-weight:650;color:#c9d7fb;background:rgba(255,255,255,.02);
+}
+.status{font-size:.78rem;font-weight:700;border-radius:999px;padding:4px 10px;border:1px solid var(--line)}
+.status.live{color:#a7f3d0;border-color:#14532d;background:#052e1a}
+.status.alpha{color:#fde68a;border-color:#78350f;background:#3a2203}
+.status.dev{color:#bfdbfe;border-color:#1e3a8a;background:#0c1f49}
+
+/* Header */
+header{
+position:sticky;top:0;z-index:80;
+backdrop-filter:blur(10px);
+background:rgba(7,12,24,.74);
+border-bottom:1px solid rgba(32,50,87,.8);
+}
+.nav{
+height:72px;display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+.logo{
+width:34px;height:34px;border-radius:11px;
+background:conic-gradient(from 220deg,#2de2c4,#4f8cff,#9b8cff,#2de2c4);
+box-shadow:0 0 0 2px rgba(255,255,255,.05),0 10px 22px rgba(79,140,255,.36);
+}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;color:var(--muted)}
+nav a:hover{color:#d8e5ff}
+.nav-ctas{display:flex;gap:10px}
+
+/* Hero */
+.hero{padding:72px 0 30px}
+.hero-grid{
+display:grid;grid-template-columns:1.12fr .88fr;gap:18px;align-items:stretch;
+}
+.hero-left,.hero-right{
+border:1px solid var(--line);
+border-radius:var(--radius);
+background:linear-gradient(180deg,#0d1830,#0b152b);
+box-shadow:var(--shadow);
+}
+.hero-left{padding:34px}
+.hero h1{
+margin:14px 0 14px;
+font-size:clamp(2rem,4.2vw,3.15rem);
+line-height:1.1;
+letter-spacing:-.4px;
+}
+.hero p{
+margin:0 0 22px;color:#c8d7fa;font-size:1.04rem;max-width:58ch;
+}
 ```
-
