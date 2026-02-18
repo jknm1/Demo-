@@ -1,78 +1,118 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Demo Exchange Dashboard</title>
-<style>
-body{
-  margin:0;
-  font-family:Arial;
-  background:#0b0f17;
-  color:#fff;
-}
-header{
-  background:#111827;
-  padding:15px;
-  text-align:center;
-  font-size:22px;
-  font-weight:bold;
-}
-.container{
-  padding:20px;
-}
-.card{
-  background:#111827;
-  padding:20px;
-  border-radius:12px;
-  margin-bottom:15px;
-}
-.balance{
-  font-size:28px;
-  color:#22c55e;
-}
-.label{
-  color:#9ca3af;
-}
-table{
-  width:100%;
-  border-collapse:collapse;
-}
-td,th{
-  padding:12px;
-  text-align:left;
-}
-th{
-  color:#9ca3af;
-}
-.green{color:#22c55e;}
-.red{color:#ef4444;}
-</style>
-</head>
-<body>
+```html
+<div class="mini reveal"><h4>Support readiness</h4><p>AI-first help with human escalation path.</p></div>
+<div class="mini reveal"><h4>Compliance-ready</h4><p>Policy and risk pages linked clearly in footer.</p></div>
+</div>
+</div>
+</div>
+</section>
 
-<header>Real Trading Dashboard</header>
-
+<!-- TESTIMONIALS -->
+<section class="section">
 <div class="container">
+<h2 class="reveal">What early users say</h2>
+<p class="lead reveal">Real feedback from builders and early adopters.</p>
+<div class="quotes">
+<article class="card quote reveal">
+<p>“Useful, practical, and privacy-aware from day one.”</p>
+<small>— Early adopter, Nairobi</small>
+</article>
+<article class="card quote reveal">
+<p>“The direction is clear. This feels like an execution-focused ecosystem.”</p>
+<small>— Freelancer, Mombasa</small>
+</article>
+</div>
+</div>
+</section>
 
-<div class="card">
-<div class="label">real Balance</div>
-<div class="balance">$25,000,000 USDT</div>
+<!-- ROADMAP -->
+<section class="section" id="roadmap">
+<div class="container">
+<h2 class="reveal">Roadmap</h2>
+<p class="lead reveal">Clear staged execution path.</p>
+<div class="roadmap">
+<article class="card step reveal"><b>Q1 2026</b><span>ErrandAI + AlphaTrade expansion</span></article>
+<article class="card step reveal"><b>Q2 2026</b><span>World Forge private beta</span></article>
+<article class="card step reveal"><b>Q3 2026</b><span>Nexara Forge early access</span></article>
+<article class="card step reveal"><b>2027</b><span>Unified ecosystem + open APIs</span></article>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+<div class="container">
+<h2 class="reveal">FAQ</h2>
+<p class="lead reveal">Quick answers for first-time visitors.</p>
+
+<div class="faq">
+<details class="reveal">
+<summary>What is Zynx Corporation?</summary>
+<p>Zynx is an AI infrastructure company building privacy-first platforms for practical use cases.</p>
+</details>
+<details class="reveal">
+<summary>Which products are live now?</summary>
+<p>ErrandAI, AlphaTrade Global, and Zynx Capital are active. World Forge and Nexara Forge are in development.</p>
+</details>
+<details class="reveal">
+<summary>How do I get support?</summary>
+<p>Support is available through official channels with AI-first triage and human escalation.</p>
+</details>
+<details class="reveal">
+<summary>How do I join early access?</summary>
+<p>Use the waitlist form to receive launch updates, private invites, and priority onboarding.</p>
+</details>
 </div>
 
-<div class="card">
-<div class="label">Markets</div>
-<table>
-<tr><th>Pair</th><th>Price</th><th>Change</th></tr>
-<tr><td>BTC/USDT</td><td>$64,230</td><td class="green">+2.4%</td></tr>
-<tr><td>ETH/USDT</td><td>$3,120</td><td class="red">-1.2%</td></tr>
-<tr><td>XAU/USD</td><td>$2,040</td><td class="green">+0.6%</td></tr>
-</table>
+<div class="card final reveal">
+<div>
+<h3 style="margin:0 0 6px">Ready to build with Zynx?</h3>
+<p class="muted" style="margin:0">Join serious early adopters getting first access to upcoming launches.</p>
+</div>
+<a class="btn primary" href="YOUR_WAITLIST_LINK" target="_blank" rel="noopener">Join Waitlist</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container foot">
+<div class="muted">©️ 2026 Zynx Corporation. All rights reserved.</div>
+<div class="links">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+<a href="#">Risk Disclosure</a>
+<a href="mailto:hello@zynxcorp.com">hello@zynxcorp.com</a>
+</div>
+</div>
+</footer>
+
+<div class="sticky">
+<a class="btn primary" href="YOUR_WAITLIST_LINK" target="_blank" rel="noopener">Join Waitlist</a>
 </div>
 
-<div class="card">
-<div class="label">Notice</div>
-This is a simulated interface for learning and design practice only.
-</div>
+<script>
+// Smooth anchor scrolling
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener('click',e=>{
+const id=a.getAttribute('href');
+if(id && id.length>1){
+const el=document.querySelector(id);
+if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}
+}
+});
+});
 
-</div>
+// Reveal animation
+const io = new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){ entry.target.classList.add('show'); io.unobserve(entry.target); }
+});
+}, {threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
 </body>
 </html>
+```
+
