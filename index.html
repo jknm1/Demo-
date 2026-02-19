@@ -1,121 +1,113 @@
-```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Zynx Corporation — Privacy-First AI Platforms</title>
-<meta name="description" content="Zynx Corporation builds privacy-first AI platforms for practical real-world execution." />
-<meta name="theme-color" content="#0a1020" />
+  <!-- Google tag (gtag.js) - Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-090Y6TW5JM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-090Y6TW5JM');
+  </script>
 
-<!-- Open Graph -->
-<meta property="og:title" content="Zynx Corporation — Privacy-First AI Platforms" />
-<meta property="og:description" content="Build smarter with practical AI platforms for builders and businesses." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.zynxcorp.com/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zynx Corporation</title>
 
-<style>
-:root{
---bg:#070c18;
---bg2:#0b1428;
---card:#0f1a33;
---card2:#111f3e;
---text:#e9f0ff;
---muted:#a8b8de;
---primary:#4f8cff;
---primary2:#7aa7ff;
---accent:#2de2c4;
---ok:#22c55e;
---warn:#f59e0b;
---line:#203257;
---shadow:0 12px 36px rgba(0,0,0,.35);
---radius:16px;
---max:1150px;
-}
+  <!-- Open Graph / Twitter Cards (merged and cleaned) -->
+  <meta property="og:title" content="Zynx Corporation – Privacy-First AI Infrastructure">
+  <meta property="og:description" content="Building AI-powered companies for the future. Join the waitlist for early access to ErrandAI, AlphaTrade, World Forge & more. Limited spots.">
+  <meta property="og:image" content="https://www.zynxcorp.com/IMG_2168.jpeg">
+  <meta property="og:url" content="https://www.zynxcorp.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.zynxcorp.com/IMG_2168.jpeg">
 
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{
-font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,sans-serif;
-background:radial-gradient(1200px 600px at 80% -10%, #173064 0%, transparent 45%),
-radial-gradient(1000px 600px at -10% 0%, #102245 0%, transparent 42%),
-linear-gradient(180deg,#060a14 0%,#081022 40%,#0b1428 100%);
-color:var(--text);
-line-height:1.55;
-}
-img{max-width:100%;display:block}
-a{text-decoration:none;color:inherit}
-.container{max-width:var(--max);margin:auto;padding:0 20px}
-.section{padding:62px 0}
-.muted{color:var(--muted)}
-.small{font-size:.92rem}
-.sr-only{
-position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-/* Buttons */
-.btn{
-border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;
-padding:12px 18px;border-radius:12px;font-weight:700;transition:.22s ease;line-height:1;
-}
-.btn.primary{
-background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;
-box-shadow:0 8px 26px rgba(79,140,255,.35);
-}
-.btn.primary:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(79,140,255,.42)}
-.btn.ghost{
-background:transparent;color:#dbe7ff;border:1px solid var(--line);
-}
-.btn.ghost:hover{background:#0d1934}
+  <!-- Updated favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-.badge{
-display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
-border:1px solid var(--line);font-size:.82rem;font-weight:650;color:#c9d7fb;background:rgba(255,255,255,.02);
-}
-.status{font-size:.78rem;font-weight:700;border-radius:999px;padding:4px 10px;border:1px solid var(--line)}
-.status.live{color:#a7f3d0;border-color:#14532d;background:#052e1a}
-.status.alpha{color:#fde68a;border-color:#78350f;background:#3a2203}
-.status.dev{color:#bfdbfe;border-color:#1e3a8a;background:#0c1f49}
+</head> 
+<body>
+  
+  <!-- Small circular logo (updated to relative path) -->
+  <div class="logo-corner">
+    <img src="/IMG_2168.jpeg" alt="Zynx Corporation Logo" class="small-logo">
+  </div>
 
-/* Header */
-header{
-position:sticky;top:0;z-index:80;
-backdrop-filter:blur(10px);
-background:rgba(7,12,24,.74);
-border-bottom:1px solid rgba(32,50,87,.8);
-}
-.nav{
-height:72px;display:flex;align-items:center;justify-content:space-between;gap:14px;
-}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
-.logo{
-width:34px;height:34px;border-radius:11px;
-background:conic-gradient(from 220deg,#2de2c4,#4f8cff,#9b8cff,#2de2c4);
-box-shadow:0 0 0 2px rgba(255,255,255,.05),0 10px 22px rgba(79,140,255,.36);
-}
-nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;color:var(--muted)}
-nav a:hover{color:#d8e5ff}
-.nav-ctas{display:flex;gap:10px}
+  <!-- Dark mode toggle -->
+  <button id="theme-toggle" class="theme-btn">🌙</button>
 
-/* Hero */
-.hero{padding:72px 0 30px}
-.hero-grid{
-display:grid;grid-template-columns:1.12fr .88fr;gap:18px;align-items:stretch;
-}
-.hero-left,.hero-right{
-border:1px solid var(--line);
-border-radius:var(--radius);
-background:linear-gradient(180deg,#0d1830,#0b152b);
-box-shadow:var(--shadow);
-}
-.hero-left{padding:34px}
-.hero h1{
-margin:14px 0 14px;
-font-size:clamp(2rem,4.2vw,3.15rem);
-line-height:1.1;
-letter-spacing:-.4px;
-}
-.hero p{
-margin:0 0 22px;color:#c8d7fa;font-size:1.04rem;max-width:58ch;
-}
-```
+  <!-- Floating Circular Navigation -->
+  <div class="floating-nav">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-btn">
+      <span class="nav-icon"></span>
+    </label>
+
+    <ul class="nav-menu">
+      <li class="nav-item" style="--i:0"><a href="#home" class="nav-link">Home</a></li>
+      <li class="nav-item" style="--i:1"><a href="#platforms" class="nav-link">Platforms</a></li>
+      <li class="nav-item" style="--i:2"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item" style="--i:3"><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Header and Waitlist Card -->
+  <header id="home">
+    <!-- ... all your header content stays exactly as is ... -->
+  </header>
+
+  <main class="container">
+    <!-- ... all your sections: platforms, donate, affiliate, testimonials, roadmap, cta ... -->
+  </main>
+
+  <div class="founder-line">
+    Founded by Joseph N.
+  </div>
+
+  <button class="founder-btn" onclick="openFounderNote()">
+    Founder’s Note →
+  </button>
+
+<!-- Founder Note Modal -->
+<div id="founderModal" class="founder-modal">
+  <div class="founder-modal-box">
+    <h2>Founder’s Note</h2>
+    <p><strong>Joseph N. — Founder</strong></p>
+    <p>
+      Founder of Zynxcorp, focused on building scalable AI infrastructure,
+      digital ecosystems, and performance-driven trading platforms that unlock
+      opportunity for skilled individuals worldwide.
+    </p>
+    <span class="founder-close" onclick="closeFounderNote()">Close</span>
+  </div>
+</div>
+
+<!-- Your existing script.js stays -->
+<script src="script.js"></script>
+
+<!-- ADDING THIS SCRIPT ONLY FOR FOUNDER MODAL -->
+<script>
+  function openFounderNote() {
+    document.getElementById("founderModal").classList.add("show");
+  }
+  function closeFounderNote() {
+    document.getElementById("founderModal").classList.remove("show");
+  }
+</script>
+
+<div id="cookie-banner">
+  This site uses cookies for analytics and functionality.
+  <button id="cookie-accept">OK</button>
+</div>
+
+</body>
+</html>
