@@ -1,113 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) - Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-090Y6TW5JM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-090Y6TW5JM');
-  </script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zynx Corporation</title>
-
-  <!-- Open Graph / Twitter Cards (merged and cleaned) -->
-  <meta property="og:title" content="Zynx Corporation – Privacy-First AI Infrastructure">
-  <meta property="og:description" content="Building AI-powered companies for the future. Join the waitlist for early access to ErrandAI, AlphaTrade, World Forge & more. Limited spots.">
-  <meta property="og:image" content="https://www.zynxcorp.com/IMG_2168.jpeg">
-  <meta property="og:url" content="https://www.zynxcorp.com/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.zynxcorp.com/IMG_2168.jpeg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Updated favicon -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-</head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zynxcorp</title>
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-  
-  <!-- Small circular logo (updated to relative path) -->
-  <div class="logo-corner">
-    <img src="/IMG_2168.jpeg" alt="Zynx Corporation Logo" class="small-logo">
-  </div>
 
-  <!-- Dark mode toggle -->
-  <button id="theme-toggle" class="theme-btn">🌙</button>
+<div id="loader">
+<div class="spinner"></div>
+</div>
 
-  <!-- Floating Circular Navigation -->
-  <div class="floating-nav">
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-btn">
-      <span class="nav-icon"></span>
-    </label>
+<div class="cursor-glow"></div>
 
-    <ul class="nav-menu">
-      <li class="nav-item" style="--i:0"><a href="#home" class="nav-link">Home</a></li>
-      <li class="nav-item" style="--i:1"><a href="#platforms" class="nav-link">Platforms</a></li>
-      <li class="nav-item" style="--i:2"><a href="#about" class="nav-link">About</a></li>
-      <li class="nav-item" style="--i:3"><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-  </div>
+<header class="nav">
+<div class="logo">Zynxcorp</div>
+<nav>
+<a href="#about">About</a>
+<a href="#vision">Vision</a>
+<a href="#stats">Impact</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-  <!-- Header and Waitlist Card -->
-  <header id="home">
-    <!-- ... all your header content stays exactly as is ... -->
-  </header>
+<section class="hero">
 
-  <main class="container">
-    <!-- ... all your sections: platforms, donate, affiliate, testimonials, roadmap, cta ... -->
-  </main>
+<canvas id="particles"></canvas>
 
-  <div class="founder-line">
-    Founded by Joseph N.
-  </div>
+<div class="hero-card">
+<h1>Infrastructure For Limitless Opportunity</h1>
+<p>We build intelligent systems that scale power, automate leverage, and unlock global access to digital infrastructure.</p>
+<button class="cta">Enter Ecosystem</button>
+</div>
 
-  <button class="founder-btn" onclick="openFounderNote()">
-    Founder’s Note →
-  </button>
+</section>
 
-<!-- Founder Note Modal -->
+<section id="stats" class="stats fade-in">
+<div>
+<h2 class="count" data-target="120">0</h2>
+<p>Systems Built</p>
+</div>
+<div>
+<h2 class="count" data-target="85">0</h2>
+<p>Countries Reached</p>
+</div>
+<div>
+<h2 class="count" data-target="999">0</h2>
+<p>Opportunities Enabled</p>
+</div>
+</section>
+
+<section id="about" class="section fade-in">
+<h2>Who We Are</h2>
+<p>Zynxcorp is an advanced infrastructure company engineering digital ecosystems that give individuals institutional-level capabilities.</p>
+</section>
+
+<section id="vision" class="section dark fade-in">
+<h2>Our Vision</h2>
+<p>The future belongs to those with access to powerful systems. We build platforms that remove limits and expand human leverage.</p>
+</section>
+
+<div class="founder-line">A note from the founder</div>
+<button class="founder-btn" onclick="openFounder()">Read Note</button>
+
 <div id="founderModal" class="founder-modal">
-  <div class="founder-modal-box">
-    <h2>Founder’s Note</h2>
-    <p><strong>Joseph N. — Founder</strong></p>
-    <p>
-      Founder of Zynxcorp, focused on building scalable AI infrastructure,
-      digital ecosystems, and performance-driven trading platforms that unlock
-      opportunity for skilled individuals worldwide.
-    </p>
-    <span class="founder-close" onclick="closeFounderNote()">Close</span>
-  </div>
+<div class="founder-modal-box">
+<h3>Founder’s Note</h3>
+<p>
+Zynxcorp was built on one principle: opportunity should scale.  
+We design intelligent infrastructure that empowers individuals to operate beyond limits and access systems once reserved for institutions.  
+<br><br>
+Thank you for being part of this vision.
+</p>
+<span class="founder-close" onclick="closeFounder()">Close</span>
+</div>
 </div>
 
-<!-- Your existing script.js stays -->
+<footer id="contact">
+<p>© 2026 Zynxcorp</p>
+</footer>
+
 <script src="script.js"></script>
-
-<!-- ADDING THIS SCRIPT ONLY FOR FOUNDER MODAL -->
-<script>
-  function openFounderNote() {
-    document.getElementById("founderModal").classList.add("show");
-  }
-  function closeFounderNote() {
-    document.getElementById("founderModal").classList.remove("show");
-  }
-</script>
-
-<div id="cookie-banner">
-  This site uses cookies for analytics and functionality.
-  <button id="cookie-accept">OK</button>
-</div>
-
 </body>
 </html>
