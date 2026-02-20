@@ -1,86 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zynxcorp</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zynx Corporation</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-090Y6TW5JM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-090Y6TW5JM');
+  </script>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Zynx Corporation – Privacy-First AI Infrastructure">
+  <meta property="og:description" content="Building AI-powered companies for the future. Join the waitlist for early access to ErrandAI, AlphaTrade, World Forge & more. Limited spots.">
+  <meta property="og:image" content="https://www.zynxcorp.com/IMG_2168.jpeg">
+  <meta property="og:url" content="https://www.zynxcorp.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.zynxcorp.com/IMG_2168.jpeg">
+
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body>
+  <!-- Logo & Theme Toggle -->
+  <div class="logo-corner">
+    <img src="/IMG_2168.jpeg" alt="Zynx Logo" class="small-logo">
+  </div>
+  <button id="theme-toggle" class="theme-btn">🌙</button>
 
-<div id="loader">
-<div class="spinner"></div>
-</div>
+  <!-- Floating Navigation -->
+  <div class="floating-nav">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-btn"><span class="nav-icon"></span></label>
+    <ul class="nav-menu">
+      <li class="nav-item" style="--i:0"><a href="#home" class="nav-link">Home</a></li>
+      <li class="nav-item" style="--i:1"><a href="#platforms" class="nav-link">Platforms</a></li>
+      <li class="nav-item" style="--i:2"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item" style="--i:3"><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
 
-<div class="cursor-glow"></div>
+  <!-- Header / Hero Section -->
+  <header id="home">
+    <div class="container">
+      <h1>Zynx Corporation</h1>
+      <p class="subtitle">Umbrella company building AI-powered platforms and next-gen digital infrastructure.</p>
+      <p class="status">Currently under development • Early access for serious builders only</p>
 
-<header class="nav">
-<div class="logo">Zynxcorp</div>
-<nav>
-<a href="#about">About</a>
-<a href="#vision">Vision</a>
-<a href="#stats">Impact</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+      <!-- Waitlist Form -->
+      <div class="waitlist-card fade-in">
+        <div class="waitlist-section">
+          <h2>Join the Zynx Waitlist</h2>
+          <p>Get priority access to ErrandAI, AlphaTrade Global, Zynx Capital, World Forge, Nexara Forge & more.<br>
+             Limited spots • Serious builders & early adopters only • No spam</p>
+          <form action="https://formspree.io/f/mqelrneo" method="POST" class="waitlist-form">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="text" name="name" placeholder="Your name (optional)">
+            <input type="hidden" name="_subject" value="New Zynx Waitlist Signup">
+            <input type="hidden" name="_gotcha" style="display:none">
+            <button type="submit" class="btn large">Join Waitlist →</button>
+          </form>
+          <p class="form-note">We'll send launch updates & exclusive early invites only.</p>
 
-<section class="hero">
+          <div class="social-proof">
+            <p><strong>1,247</strong> builders already on the waitlist</p>
+            <p><span class="pulse-dot"></span> +5 joined in the last hour</p>
+          </div>
 
-<canvas id="particles"></canvas>
+          <div class="success-message" style="display:none; text-align:center;">
+            <p>🎉 Thank you! You’ve joined the waitlist successfully.</p>
+            <a href="#home" class="btn large scroll-to-top">Back to Waitlist ↑</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<div class="hero-card">
-<h1>Infrastructure For Limitless Opportunity</h1>
-<p>We build intelligent systems that scale power, automate leverage, and unlock global access to digital infrastructure.</p>
-<button class="cta">Enter Ecosystem</button>
-</div>
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Platforms -->
+    <section id="platforms" class="platforms fade-in">
+      <h2>Our AI Platforms</h2>
+      <div class="grid">
+        <div class="card fade-in">
+          <h3>ErrandAI</h3>
+          <p>Connects people needing errands (delivery, shopping, tutoring) with trusted local runners.</p>
+          <span class="badge-live">Live (Alpha)</span>
+          <a href="https://errandai.app/" target="_blank" class="btn">Visit ErrandAI →</a>
+        </div>
 
-</section>
+        <div class="card fade-in">
+          <h3>AlphaTrade Global</h3>
+          <p>AI-assisted global trading platform built for accessibility, smart execution, and capital growth.</p>
+          <span class="badge-live">Live</span>
+          <a href="https://alphatradeglobal.live/" target="_blank" class="btn">Visit AlphaTrade Global →</a>
+        </div>
 
-<section id="stats" class="stats fade-in">
-<div>
-<h2 class="count" data-target="120">0</h2>
-<p>Systems Built</p>
-</div>
-<div>
-<h2 class="count" data-target="85">0</h2>
-<p>Countries Reached</p>
-</div>
-<div>
-<h2 class="count" data-target="999">0</h2>
-<p>Opportunities Enabled</p>
-</div>
-</section>
+        <div class="card fade-in zynx-capital">
+          <h3>Zynx Capital</h3>
+          <p>Get fully funded $100k trading accounts and start trading without your own capital.</p>
+          <span class="badge-live">Live</span>
+          <a href="https://www.zynx.world" target="_blank" class="btn large">Join Waiting List →</a>
+        </div>
 
-<section id="about" class="section fade-in">
-<h2>Who We Are</h2>
-<p>Zynxcorp is an advanced infrastructure company engineering digital ecosystems that give individuals institutional-level capabilities.</p>
-</section>
+        <div class="card fade-in">
+          <h3>World Forge</h3>
+          <p>Your personal, private intelligence engine — offline-first AI for notes, documents, finances, and more.</p>
+          <span class="badge-dev">Under Development</span>
+          <button class="btn btn-disabled">Coming Soon</button>
+        </div>
 
-<section id="vision" class="section dark fade-in">
-<h2>Our Vision</h2>
-<p>The future belongs to those with access to powerful systems. We build platforms that remove limits and expand human leverage.</p>
-</section>
+        <div class="card fade-in">
+          <h3>Nexara Forge</h3>
+          <p>Mobile app turning natural language prompts into instantly executable software securely on-device.</p>
+          <span class="badge-dev">Under Development</span>
+          <button class="btn btn-disabled">Coming Soon</button>
+        </div>
+      </div>
+    </section>
 
-<div class="founder-line">A note from the founder</div>
-<button class="founder-btn" onclick="openFounder()">Read Note</button>
+    <!-- Donate -->
+    <section id="donate" class="donate fade-in">
+      <h2>Support Zynx</h2>
+      <p>Your contributions help us maintain support, develop new features, and expand infrastructure.</p>
+      <a href="https://www.paypal.com/donate" target="_blank" class="btn large">Donate Now →</a>
+    </section>
 
-<div id="founderModal" class="founder-modal">
-<div class="founder-modal-box">
-<h3>Founder’s Note</h3>
-<p>
-Zynxcorp was built on one principle: opportunity should scale.  
-We design intelligent infrastructure that empowers individuals to operate beyond limits and access systems once reserved for institutions.  
-<br><br>
-Thank you for being part of this vision.
-</p>
-<span class="founder-close" onclick="closeFounder()">Close</span>
-</div>
-</div>
+    <!-- Affiliate -->
+    <section id="affiliate" class="affiliate fade-in">
+      <h2>Affiliate Program</h2>
+      <p>Earn commissions by referring users. Early affiliates get higher rewards.</p>
+      <a href="#affiliate-form" class="btn large">Join Affiliate →</a>
+    </section>
 
-<footer id="contact">
-<p>© 2026 Zynxcorp</p>
-</footer>
+    <section id="affiliate-form" class="affiliate-form fade-in">
+      <h2>Affiliate Application</h2>
+      <form action="https://formspree.io/f/mqelrneo" method="POST" class="waitlist-form">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="platform" placeholder="How will you promote Zynx? (IG, TikTok, Website)">
+        <input type="hidden" name="_subject" value="New Affiliate Application">
+        <input type="hidden" name="_gotcha" style="display:none">
+        <button type="submit" class="btn large">Apply as Affiliate →</button>
+      </form>
+      <div id="affiliate-success" style="display:none; text-align:center;">
+        <p>🎉 Thank you! Your affiliate application has been submitted.</p>
+        <a href="#affiliate" class="btn large scroll-to-top">Back to Affiliate Form ↑</a>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- Testimonials -->
+    <section class="testimonials fade-in">
+      <h2>What Early Builders Say</h2>
+      <div class="quote-grid">
+        <div class="quote">
+          <p>"Zynx is exactly what we've been waiting for — privacy-first AI without the Big Tech lock-in."</p>
+          <cite>— Nairobi-based developer (Alpha user)</cite>
+        </div>
+        <div class="quote">
+          <p>"The waitlist alone feels like being part of something big. Can't wait for ErrandAI."</p>
+          <cite>— Freelancer, Mombasa</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="roadmap fade-in">
+      <h2>Roadmap</h2>
+      <div class="timeline">
+        <div class="milestone">Q1 2026 — Alpha launch of ErrandAI & AlphaTrade</div>
+        <div class="milestone">Q2 2026 — World Forge private beta</div>
+        <div class="milestone">Q3 2026 — Nexara Forge mobile app early access</div>
+        <div class="milestone">2027 — Full ecosystem integration & open APIs</div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about about-card fade-in">
+      <h2>About Zynx Corporation</h2>
+      <p>Zynx builds privacy-first AI platforms for creators, traders, and developers worldwide.</p>
+      <h3>Our Mission</h3>
+      <p>Deliver ethical, scalable, and user-owned AI tools.</p>
+      <h3>Values</h3>
+      <ul class="values">
+        <li>Privacy by design</li>
+        <li>Accessibility</li>
+        <li>Local-first execution</li>
+        <li>Builder mindset</li>
+        <li>Transparency</li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq fade-in">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <h3>What is Zynx Capital?</h3>
+        <p>We provide fully funded live $100k trading accounts. No fee, no evaluation—just trade and earn.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Any fee to get the account?</h3>
+        <p>No fees at all. The account is fully funded by Zynx Corporation.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2026 Zynx Corporation. All rights reserved.</p>
+    <p>Forging the future of AI-driven opportunity.</p>
+
+    <div class="footer-signup fade-in">
+      <p>Don't miss launch updates</p>
+      <form action="https://formspree.io/f/mqelrneo" method="POST" class="mini-form">
+        <input type="email" name="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-links">
+      <a href="mailto:hello@zynxcorp.com">✉️ hello@zynxcorp.com</a>
+      <div class="footer-legal">
+        <a href="/privacy.html">Privacy Policy</a>
+        <span>•</span>
+        <a href="/terms.html">Terms of Service</a>
+        <span>•</span>
+        <a href="/risk-disclosure.html">Risk Disclosure</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Founder Modal -->
+  <div id="founderModal" class="founder-modal">
+    <div class="founder-modal-box">
+      <h2>Founder’s Note</h2>
+      <p><strong>Joseph N. — Founder</strong></p>
+      <p>Building scalable AI infrastructure & digital ecosystems to empower creators, traders, and builders worldwide.</p>
+      <span class="founder-close" onclick="closeFounderNote()">Close</span>
+    </div>
+  </div>
+
+  <button class="founder-btn" onclick="openFounderNote()">Founder’s Note →</button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
